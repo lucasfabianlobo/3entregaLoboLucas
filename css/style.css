@@ -1,0 +1,316 @@
+/*******************GENERAL****************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25rem;
+}
+
+.color-acento {
+  color: blueviolet;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 25px 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(98, 31, 160);
+}
+
+/*******************INDEX**********************/
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/*******************HEADER*******************/
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header .logo {
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 3rem;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: blueviolet;
+}
+
+/***========================COMIENZO CUERPO=============================****/
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/fondo-si.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: rgb(236, 227, 227);
+}
+
+/***==================================SOMOS HOREB===========================***/
+
+#somos-horeb .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+/***========================NUESTROS PRODUCTOS========================***/
+
+.nuestros-productos {
+  background-image: url("../img/fondo-product2.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.nuestros-productos .container {
+  padding: 100px 0px;
+}
+
+.nuestros-productos h2 {
+  margin-bottom: 10rem;
+  color: white;
+}
+
+.nuestros-productos h3 {
+  color: white;
+}
+
+.nuestros-productos p {
+  display: none;
+}
+
+.nuestros-productos .productos1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/cadena-oro.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nuestros-productos .productos2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/anillo-oro.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.nuestros-productos .productos3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/reloj.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#ubicacion .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+#ubicacion ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10vh;
+  text-align: center;
+}
+
+#contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/escritorio.jpg");
+  background-repeat: no-repeat;
+  background-size: 25px 50px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#contacto h2 {
+  color: white;
+}
+
+/******************************FOOTER*************************/
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.container-footer img,
+p {
+  height: 5vh;
+}
+
+/*******************************TIENDA ONLINE*****************************/
+.intro-tiendaOnline {
+  border: solid white;
+  background-color: white;
+  text-align: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 22px;
+}
+
+.row article {
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid black;
+  box-shadow: 0.5px 0.5px 1.5px black;
+  border-radius: 1rem;
+  padding: 4rem;
+  margin: 1rem;
+  place-content: center;
+}
+
+.row button {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blueviolet;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+}
+
+.row button:hover {
+  background-color: rgb(98, 31, 160);
+}
+
+.row button:active {
+  background-color: rgb(71, 41, 71);
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}
+
+/**********************CONTACTO****************************/
+
+/*# sourceMappingURL=style.css.map */
